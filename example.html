@@ -71,9 +71,7 @@
         $(this).attr('disabled', 'disabled');
 
         addon.api.getPositions(getQueryFromOptions(addonOptions)).then(function (response) {
-          $('#result').html('List Positions Result:<br><code>' + 'HELLO'
-          JSON.stringify(response) +
-       '</code>');
+          $('#result').html('List Positions Result:<br><code>' + JSON.stringify(response) + '</code>');
         }).catch(function (err) {
           $('#result').html('Error:<br><code>' + err + '</code>');
         }).finally(function () {
